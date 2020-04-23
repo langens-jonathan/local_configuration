@@ -96,6 +96,60 @@
                         ]
                     },
                     {
+                        "description": "If External Keyboard Fn  -> Fn ",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "type": "device_if",
+                                        "identifiers": [
+                                            {
+                                                "vendor_id": 76,
+                                                "product_id": 620
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "fn"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "fn"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "If External Keyboard Control -> Control",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "type": "device_if",
+                                        "identifiers": [
+                                            {
+                                                "vendor_id": 76,
+                                                "product_id": 620
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "left_control"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_control"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Emacs: Fn  -> Control ",
                         "manipulators": [
                             {
